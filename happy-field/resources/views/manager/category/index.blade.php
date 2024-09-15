@@ -18,7 +18,7 @@
     <tbody>
         @foreach($cats as $cat)
         <tr>
-            <td>{{ $cat->id }}</td>
+            <td>{{ $loop->index+1 }}</td>
             <td>{{ $cat->name }}</td>
             <td>{{ $cat->status == 0 ? 'Tạm ẩn' : 'Hiển thị'}}</td>
             <td>

@@ -28,7 +28,7 @@
     <tbody>
         @foreach($products as $product)
         <tr>
-            <td>{{ $product->id }}</td>
+            <td>{{ $loop->index+1 }}</td>
             <td style="max-width: 100px;">{{ $product->name }}</td>
             <td><img src="uploads/product/{{ $product->image }}" alt="" width="40px" height="40px"></td>
             <td>{{ $product->price }}</td>
